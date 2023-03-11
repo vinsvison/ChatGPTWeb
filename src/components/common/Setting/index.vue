@@ -2,7 +2,6 @@
 import { computed, ref } from 'vue'
 import { NModal, NTabPane, NTabs } from 'naive-ui'
 import General from './General.vue'
-import About from './About.vue'
 import { SvgIcon } from '@/components/common'
 
 const props = defineProps<Props>()
@@ -47,7 +46,6 @@ const show = computed({
             <SvgIcon class="text-lg" icon="ri:list-settings-line" />
             <span class="ml-2">{{ $t('setting.config') }}</span>
           </template>
-          <About />
         </NTabPane>
       </NTabs>
     </div>
